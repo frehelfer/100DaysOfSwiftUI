@@ -1,6 +1,6 @@
 import Cocoa
 
-let celcius = 35
+let celcius = 25
 
 let fahrenheit = (celcius * 9) / 5 + 32
 
