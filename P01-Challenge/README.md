@@ -1,14 +1,15 @@
-# Project 01 - 💰 WeSplit
+# Project 01 - 📏 Convert
 
 **Purpose of the App :**
 
-A mobile app that makes it easy to split the account with other friends and calculates tips.
+A mobile app that does unit conversions like Meters to Miles or Celsius to Fahrenheit.
 
 ##
 
 **Features Used :**
 
-Form, Section, NavigationView, TextField, Picker, ForEach, @State
+Form, Section, TextField, NavigationView, Picker, ForEach, @State
+Dimension, UnitLenght, UnitDuration, UnitTemperature, UnitMass
 
 ##
 
