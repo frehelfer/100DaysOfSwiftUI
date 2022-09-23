@@ -14,4 +14,4 @@ Form, Section, NavigationView, TextField, Picker, ForEach, @State
 
 **Screenshoots :**
 
-<img src="screenshot/screenshot1.gif"/>
+<img src="screenshot/screenshot1.gif" width="250"/>
