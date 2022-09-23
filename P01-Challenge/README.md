@@ -1,4 +1,4 @@
-# Project 01 - 📏 Convert
+# Challenge 1 - 📏 Converter
 
 **Purpose of the App :**
 
