@@ -1,15 +1,14 @@
-# Challenge 1 - 📏 Converter
+# Project 02 - 🏳️ GuessTheFlag
 
 **Purpose of the App :**
 
-A mobile app that does unit conversions like Meters to Miles or Celsius to Fahrenheit.
+A game that randomly asks the user for national flags and earns points as they get the correct answer.
 
 ##
 
-**Features Used :**
+**Features Learned :**
 
-Form, Section, TextField, NavigationView, Picker, ForEach, @State
-Dimension, UnitLenght, UnitDuration, UnitTemperature, UnitMass
+Stack, Image, Gradient, Frames, Buttons, Alerts, Desing
 
 ##
 
