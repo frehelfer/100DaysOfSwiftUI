@@ -43,7 +43,7 @@ struct ContentView: View {
                 
                 Section {
                     Picker("Tip percentage", selection: $tipPercentage) {
-                        ForEach(1...100, id: \.self) {
+                        ForEach(0...100, id: \.self) {
                             Text($0, format: .percent)
                         }
                     }
@@ -61,6 +61,7 @@ struct ContentView: View {
                     Text(totalPerPerson().grandTotal, format: localCurrency)
                 } header: {
                 Text("Total amount")
+                        .foregroundColor(tipPercentage == 0 ? .red : .primary)
                 }
                 
 
