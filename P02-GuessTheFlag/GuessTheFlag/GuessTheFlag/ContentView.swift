@@ -30,6 +30,9 @@ struct ContentView: View {
     
     static let allCountries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
     
+    @State private var animationAmount = 0.0
+    @State private var selectedBtn = -1
+    
     var body: some View {
         ZStack {
             AngularGradient(gradient: Gradient(colors: [.blue, .mint, .yellow, .init(red: 0.6, green: 0.2, blue: 0.7), .init(red: 0.1, green: 0.2, blue: 0.5)]), center: .bottomLeading)
@@ -58,11 +61,12 @@ struct ContentView: View {
                     ForEach(0..<3) { number in
                         Button {
                             game(number)
-//                            flagTapped(number)
+                            
                         } label: {
                             FlagImage(name: countries[number])
                         }
                     }
+                    
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 25)
@@ -89,9 +93,10 @@ struct ContentView: View {
     }
     
     func game(_ number: Int) {
-        
+
         if number == correctAnswer {
             score += 1
+            animationAmount += 360
         }
         timesPlayed += 1
         
@@ -117,6 +122,7 @@ struct ContentView: View {
         countries.remove(at: correctAnswer)
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        selectedBtn = -1
     }
     
     func reset() {
