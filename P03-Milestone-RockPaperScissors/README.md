@@ -1,14 +1,10 @@
-# Project 02 - 🏳️ GuessTheFlag
+# Project 03 - Milestone - 👊✋✌️ RockPaperScissors
 
 **Purpose of the App :**
 
-A game that randomly asks the user for national flags and earns points as they get the correct answer.
+A mobile game application that allows you to play rock, paper, scissors games against the computer.
 
 ##
-
-**Features Learned :**
-
-Stack, Image, Gradient, Frames, Buttons, Alerts, Desing
 
 ##
 

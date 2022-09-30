@@ -1,17 +1,17 @@
-# Project 02 - 🏳️ GuessTheFlag
+# Project 02 - 💤 BetterRest
 
 **Purpose of the App :**
 
-A game that randomly asks the user for national flags and earns points as they get the correct answer.
+A mobile application that predicts the time you should sleep based on the time you want to wake up, how much you want to sleep and how much coffee you have had during the day.
 
 ##
 
 **Features Learned :**
 
-Stack, Image, Gradient, Frames, Buttons, Alerts, Desing
+Core ML, DatePicker, DateFormatter, Stepper
 
 ##
 
 **Screenshoots :**
 
-<img src="screenshot/screenshot1.gif" width="250"/>
+<img src="screenshot/screemshot1.gif" width="250"/>

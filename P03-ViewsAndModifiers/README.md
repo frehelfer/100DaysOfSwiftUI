@@ -1,17 +1,13 @@
-# Project 02 - 🏳️ GuessTheFlag
+# Project 02 - ViewsAndModifiers
 
 **Purpose of the App :**
 
-A game that randomly asks the user for national flags and earns points as they get the correct answer.
+Learn how to create a Custom View Modifier
 
 ##
-
-**Features Learned :**
-
-Stack, Image, Gradient, Frames, Buttons, Alerts, Desing
 
 ##
 
 **Screenshoots :**
 
-<img src="screenshot/screenshot1.gif" width="250"/>
+<img src="screenshot/screenshot1.png" width="250"/>
