@@ -1,14 +1,14 @@
-# Project 02 - 🏳️ GuessTheFlag
+# Project 05 - 🔤 WordScramble
 
 **Purpose of the App :**
 
-A game that randomly asks the user for national flags and earns points as they get the correct answer.
+A game where you earn points by generating meaningful words from randomly given words.
 
 ##
 
 **Features Learned :**
 
-Stack, Image, Gradient, Frames, Buttons, Alerts, Desing
+ List, UITextChecker, and more.
 
 ##
 
