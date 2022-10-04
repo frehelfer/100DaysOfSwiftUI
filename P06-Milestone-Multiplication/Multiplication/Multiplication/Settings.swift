@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct Settings: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Stepper("Enter the Multiplication Table", value: $multTable, in: 1...12)
+                
+                Picker("Number of Questions", selection: $nQuestions){
+                    ForEach(choseQuestions, id:\.self) {
+                        Text(String($0))
+                    }
+                }
+                .pickerStyle(.segmented)
+                
+                Button {
+                    start()
+                } label: {
+                    Text("Start game")
+                }
+            }
+        }
     }
 }
 

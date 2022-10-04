@@ -9,30 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     
-//    let letters = Array("Hello, SwiftUI")
-//    @State private var enabled = false
-//    @State private var dragAmount = CGSize.zero
+    let letters = Array("Hello, SwiftUI")
+    @State private var enabled = false
+    @State private var dragAmount = CGSize.zero
     
 //    @State private var isAnimated = false
     
-    @State private var dragAmount = CGSize.zero
+//    @State private var dragAmount = CGSize.zero
     
     var body: some View {
         
         ZStack {
             AngularGradient(colors: [.mint, .purple, .red, .yellow, .blue], center: .center).ignoresSafeArea()
-            
-            VStack {
-                For
-            }
-            
+
             VStack {
                 Rectangle()
                     .frame(width: 200, height: 200)
                     .background(.ultraThinMaterial)
                     .border(.thinMaterial , width: 1)
                     .offset(dragAmount)
-                    
+
             }
             .gesture(
                 DragGesture()
@@ -65,7 +61,7 @@ struct ContentView: View {
 //        .onAppear {
 //            isAnimated = true
 //        }
-    
+//
 //        HStack(spacing: 0) {
 //            ForEach(0..<letters.count) { num in
 //                Text(String(letters[num]))
