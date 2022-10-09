@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9E5CFD28F23BDB0001F2DF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E5CFC28F23BDB0001F2DF /* Game.swift */; };
+		0C9E5D0528F23C010001F2DF /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E5D0428F23C010001F2DF /* GameTests.swift */; };
+		0C9E5D0E28F23E220001F2DF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E5D0D28F23E220001F2DF /* GameView.swift */; };
+		0C9E5D1028F23EA80001F2DF /* tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E5D0F28F23EA80001F2DF /* tests.swift */; };
 		0CB5FA3228E76E9300D1DA19 /* MultiplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3128E76E9300D1DA19 /* MultiplicationApp.swift */; };
 		0CB5FA3428E76E9300D1DA19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3328E76E9300D1DA19 /* ContentView.swift */; };
 		0CB5FA3628E76E9600D1DA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3528E76E9600D1DA19 /* Assets.xcassets */; };
@@ -14,7 +18,22 @@
 		0CB5FA4028E7AF2A00D1DA19 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3F28E7AF2900D1DA19 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0C9E5D0628F23C010001F2DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CB5FA2628E76E9300D1DA19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB5FA2D28E76E9300D1DA19;
+			remoteInfo = Multiplication;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0C9E5CFC28F23BDB0001F2DF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0C9E5D0228F23C010001F2DF /* GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9E5D0428F23C010001F2DF /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		0C9E5D0D28F23E220001F2DF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		0C9E5D0F28F23EA80001F2DF /* tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests.swift; sourceTree = "<group>"; };
 		0CB5FA2E28E76E9300D1DA19 /* Multiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB5FA3128E76E9300D1DA19 /* MultiplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationApp.swift; sourceTree = "<group>"; };
 		0CB5FA3328E76E9300D1DA19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C9E5CFF28F23C010001F2DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB5FA2B28E76E9300D1DA19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +60,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9E5CFB28F23BC40001F2DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E5CFC28F23BDB0001F2DF /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C9E5D0328F23C010001F2DF /* GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E5D0428F23C010001F2DF /* GameTests.swift */,
+			);
+			path = GameTests;
+			sourceTree = "<group>";
+		};
+		0C9E5D0B28F23DF00001F2DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CB5FA3328E76E9300D1DA19 /* ContentView.swift */,
+				0C9E5D0F28F23EA80001F2DF /* tests.swift */,
+				0C9E5D0D28F23E220001F2DF /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0CB5FA2528E76E9300D1DA19 = {
 			isa = PBXGroup;
 			children = (
 				0CB5FA3028E76E9300D1DA19 /* Multiplication */,
+				0C9E5D0328F23C010001F2DF /* GameTests */,
 				0CB5FA2F28E76E9300D1DA19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB5FA2E28E76E9300D1DA19 /* Multiplication.app */,
+				0C9E5D0228F23C010001F2DF /* GameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,7 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				0CB5FA3128E76E9300D1DA19 /* MultiplicationApp.swift */,
-				0CB5FA3328E76E9300D1DA19 /* ContentView.swift */,
+				0C9E5D0B28F23DF00001F2DF /* Views */,
+				0C9E5CFB28F23BC40001F2DF /* Model */,
 				0CB5FA3F28E7AF2900D1DA19 /* Settings.swift */,
 				0CB5FA3528E76E9600D1DA19 /* Assets.xcassets */,
 				0CB5FA3728E76E9600D1DA19 /* Preview Content */,
@@ -73,6 +128,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0C9E5D0128F23C010001F2DF /* GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9E5D0828F23C010001F2DF /* Build configuration list for PBXNativeTarget "GameTests" */;
+			buildPhases = (
+				0C9E5CFE28F23C010001F2DF /* Sources */,
+				0C9E5CFF28F23C010001F2DF /* Frameworks */,
+				0C9E5D0028F23C010001F2DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C9E5D0728F23C010001F2DF /* PBXTargetDependency */,
+			);
+			name = GameTests;
+			productName = GameTests;
+			productReference = 0C9E5D0228F23C010001F2DF /* GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0CB5FA2D28E76E9300D1DA19 /* Multiplication */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CB5FA3C28E76E9600D1DA19 /* Build configuration list for PBXNativeTarget "Multiplication" */;
@@ -100,6 +173,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					0C9E5D0128F23C010001F2DF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0CB5FA2D28E76E9300D1DA19;
+					};
 					0CB5FA2D28E76E9300D1DA19 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -119,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				0CB5FA2D28E76E9300D1DA19 /* Multiplication */,
+				0C9E5D0128F23C010001F2DF /* GameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C9E5D0028F23C010001F2DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB5FA2C28E76E9300D1DA19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +221,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C9E5CFE28F23C010001F2DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E5D0528F23C010001F2DF /* GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB5FA2A28E76E9300D1DA19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,12 +236,57 @@
 				0CB5FA3428E76E9300D1DA19 /* ContentView.swift in Sources */,
 				0CB5FA3228E76E9300D1DA19 /* MultiplicationApp.swift in Sources */,
 				0CB5FA4028E7AF2A00D1DA19 /* Settings.swift in Sources */,
+				0C9E5CFD28F23BDB0001F2DF /* Game.swift in Sources */,
+				0C9E5D0E28F23E220001F2DF /* GameView.swift in Sources */,
+				0C9E5D1028F23EA80001F2DF /* tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0C9E5D0728F23C010001F2DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CB5FA2D28E76E9300D1DA19 /* Multiplication */;
+			targetProxy = 0C9E5D0628F23C010001F2DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0C9E5D0928F23C010001F2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.GameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplication.app/Multiplication";
+			};
+			name = Debug;
+		};
+		0C9E5D0A28F23C010001F2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.GameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplication.app/Multiplication";
+			};
+			name = Release;
+		};
 		0CB5FA3A28E76E9600D1DA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C9E5D0828F23C010001F2DF /* Build configuration list for PBXNativeTarget "GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9E5D0928F23C010001F2DF /* Debug */,
+				0C9E5D0A28F23C010001F2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0CB5FA2928E76E9300D1DA19 /* Build configuration list for PBXProject "Multiplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
