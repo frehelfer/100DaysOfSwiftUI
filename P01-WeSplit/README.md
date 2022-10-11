@@ -1,4 +1,4 @@
-# Project 01 - 💰 WeSplit
+# Project 01.1 - 💰 WeSplit
 
 **Purpose of the App :**
 
