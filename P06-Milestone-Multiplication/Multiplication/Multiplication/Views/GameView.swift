@@ -10,35 +10,85 @@ import SwiftUI
 struct GameView: View {
     @Binding var game: Game
     
+    @State private var animationAmount = 0.0
+    @State private var scaleAnimation = 0.0
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        VStack {
-            Text("\(game.multiplicationTable) x \(game.currentQuestion) = ?")
+        ZStack {
+            Color.CustomBlue
+                .ignoresSafeArea()
             
-            HStack {
-                ForEach(0..<4) { number in
-                    Button {
-                        game.checkAnswer(btnNumber: number)
-                    } label: {
-                        Text(String(game.answers[number]))
-                            .frame(width: 60, height: 60)
-                            .background(.purple)
-                            .foregroundColor(.white)
+            VStack(spacing: 30) {
+                Spacer()
+                
+                Image(systemName: game.isRight ? "checkmark" : "xmark")
+                    .font(.system(size: 70))
+                    .frame(width: 110, height: 110)
+                    .background(game.isRight ? .CustomGreen : .CustomRed)
+                    .foregroundColor(.black)
+                    .cornerRadius(10)
+                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                        .strokeBorder(.black, lineWidth: 1)
+                    )
+                    .scaleEffect(scaleAnimation)
+                    .animation(.easeInOut.speed(0.44), value: scaleAnimation)
+                
+                Text("\(game.multiplicationTable) x \(game.currentQuestion) = ?")
+                    .font(.title)
+                    .frame(width: 170, height: 90)
+                    .background(.CustomYellow)
+                    .cornerRadius(10)
+                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                        .strokeBorder(.black, lineWidth: 1)
+                    )
+                    .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
+                    .padding(20)
+                    
+                Spacer()
+                
+                HStack {
+                    ForEach(0..<4) { number in
+                        Button {
+                            game.checkAnswer(btnNumber: number)
+                            withAnimation {
+                                animationAmount += 360
+                                scaleAnimation += 4
+                            }
+                            scaleAnimation -= 4
+                        } label: {
+                            Text(String(game.answers[number]))
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .frame(width: 65, height: 65)
+                                .background(.CustomGreen)
+                                .cornerRadius(10)
+                                .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                .overlay(RoundedRectangle(cornerRadius: 10)
+                                    .strokeBorder(Color.black, lineWidth: 1)
+                                )
+                        }
                     }
                 }
+                
+                Spacer()
             }
-            
-            Text("Score: \(game.score)")
         }
         .onAppear {
             game.start()
         }
-        .alert("Your score was:", isPresented: $game.showingScore) {
-            NavigationLink("Reset") {
-                ContentView()
+        .alert("Your score is:", isPresented: $game.showingScore) {
+            Button("Play again!") {
+                dismiss()
             }
         } message: {
             Text("\(game.score)/\(game.numberOfQuestions)")
         }
+        .navigationTitle("\(game.round)/\(game.numberOfQuestions)")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

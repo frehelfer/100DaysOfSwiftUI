@@ -16,6 +16,7 @@
 		0CB5FA3628E76E9600D1DA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3528E76E9600D1DA19 /* Assets.xcassets */; };
 		0CB5FA3928E76E9600D1DA19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3828E76E9600D1DA19 /* Preview Assets.xcassets */; };
 		0CB5FA4028E7AF2A00D1DA19 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FA3F28E7AF2900D1DA19 /* Settings.swift */; };
+		0CF2779528F435AF00514669 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2779428F435AF00514669 /* Color-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		0CB5FA3528E76E9600D1DA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB5FA3828E76E9600D1DA19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CB5FA3F28E7AF2900D1DA19 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0CF2779428F435AF00514669 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				0CB5FA3328E76E9300D1DA19 /* ContentView.swift */,
 				0C9E5D0F28F23EA80001F2DF /* tests.swift */,
+				0CF2779428F435AF00514669 /* Color-Theme.swift */,
 				0C9E5D0D28F23E220001F2DF /* GameView.swift */,
 			);
 			path = Views;
@@ -235,6 +238,7 @@
 			files = (
 				0CB5FA3428E76E9300D1DA19 /* ContentView.swift in Sources */,
 				0CB5FA3228E76E9300D1DA19 /* MultiplicationApp.swift in Sources */,
+				0CF2779528F435AF00514669 /* Color-Theme.swift in Sources */,
 				0CB5FA4028E7AF2A00D1DA19 /* Settings.swift in Sources */,
 				0C9E5CFD28F23BDB0001F2DF /* Game.swift in Sources */,
 				0C9E5D0E28F23E220001F2DF /* GameView.swift in Sources */,
