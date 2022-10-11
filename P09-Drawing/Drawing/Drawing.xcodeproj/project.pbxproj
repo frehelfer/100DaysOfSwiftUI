@@ -14,6 +14,10 @@
 		0C7874A928F59AE60016BDA3 /* CustomPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874A828F59AE50016BDA3 /* CustomPaths.swift */; };
 		0C7874AB28F59E260016BDA3 /* CustomShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874AA28F59E260016BDA3 /* CustomShapes.swift */; };
 		0C7874AD28F5B7190016BDA3 /* ImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874AC28F5B7190016BDA3 /* ImagePaint.swift */; };
+		0C7874AF28F5F32F0016BDA3 /* Blur-Blend-More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874AE28F5F32F0016BDA3 /* Blur-Blend-More.swift */; };
+		0C7874B128F5F4C20016BDA3 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874B028F5F4C20016BDA3 /* Blur.swift */; };
+		0C7874B328F604020016BDA3 /* AnimatableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874B228F604020016BDA3 /* AnimatableData.swift */; };
+		0C7874B528F608850016BDA3 /* AnimetablePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7874B428F608850016BDA3 /* AnimetablePair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		0C7874A828F59AE50016BDA3 /* CustomPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaths.swift; sourceTree = "<group>"; };
 		0C7874AA28F59E260016BDA3 /* CustomShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapes.swift; sourceTree = "<group>"; };
 		0C7874AC28F5B7190016BDA3 /* ImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaint.swift; sourceTree = "<group>"; };
+		0C7874AE28F5F32F0016BDA3 /* Blur-Blend-More.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blur-Blend-More.swift"; sourceTree = "<group>"; };
+		0C7874B028F5F4C20016BDA3 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		0C7874B228F604020016BDA3 /* AnimatableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableData.swift; sourceTree = "<group>"; };
+		0C7874B428F608850016BDA3 /* AnimetablePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimetablePair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				0C78749A28F596180016BDA3 /* DrawingApp.swift */,
 				0C78749C28F596180016BDA3 /* ContentView.swift */,
 				0C7874AC28F5B7190016BDA3 /* ImagePaint.swift */,
+				0C7874B228F604020016BDA3 /* AnimatableData.swift */,
+				0C7874B428F608850016BDA3 /* AnimetablePair.swift */,
+				0C7874AE28F5F32F0016BDA3 /* Blur-Blend-More.swift */,
+				0C7874B028F5F4C20016BDA3 /* Blur.swift */,
 				0C7874A828F59AE50016BDA3 /* CustomPaths.swift */,
 				0C7874AA28F59E260016BDA3 /* CustomShapes.swift */,
 				0C78749E28F5961B0016BDA3 /* Assets.xcassets */,
@@ -147,10 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C7874AB28F59E260016BDA3 /* CustomShapes.swift in Sources */,
+				0C7874B128F5F4C20016BDA3 /* Blur.swift in Sources */,
 				0C7874AD28F5B7190016BDA3 /* ImagePaint.swift in Sources */,
 				0C78749D28F596180016BDA3 /* ContentView.swift in Sources */,
+				0C7874B528F608850016BDA3 /* AnimetablePair.swift in Sources */,
+				0C7874AF28F5F32F0016BDA3 /* Blur-Blend-More.swift in Sources */,
 				0C78749B28F596180016BDA3 /* DrawingApp.swift in Sources */,
 				0C7874A928F59AE60016BDA3 /* CustomPaths.swift in Sources */,
+				0C7874B328F604020016BDA3 /* AnimatableData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
