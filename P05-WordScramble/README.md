@@ -8,7 +8,7 @@ A game where you earn points by generating meaningful words from randomly given 
 
 **Features Learned :**
 
- List, UITextChecker, and more.
+List, UITextChecker, and more.
 
 ##
 
