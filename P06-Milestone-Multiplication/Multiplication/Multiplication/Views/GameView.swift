@@ -15,6 +15,11 @@ struct GameView: View {
     
     @Environment(\.dismiss) var dismiss
     
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         ZStack {
             Color.CustomBlue
@@ -50,7 +55,7 @@ struct GameView: View {
                     
                 Spacer()
                 
-                HStack {
+                LazyVGrid(columns: columns, spacing: 25) {
                     ForEach(0..<4) { number in
                         Button {
                             game.checkAnswer(btnNumber: number)
@@ -61,9 +66,9 @@ struct GameView: View {
                             scaleAnimation -= 4
                         } label: {
                             Text(String(game.answers[number]))
-                                .font(.title3)
+                                .font(.title2)
                                 .foregroundColor(.black)
-                                .frame(width: 65, height: 65)
+                                .frame(width: 100, height: 100)
                                 .background(.CustomGreen)
                                 .cornerRadius(10)
                                 .shadow(color: .black, radius: 2, x: 2, y: 2)
@@ -73,6 +78,7 @@ struct GameView: View {
                         }
                     }
                 }
+                .frame(maxWidth: 250)
                 
                 Spacer()
             }
@@ -97,5 +103,6 @@ struct GameView_Previews: PreviewProvider {
     
     static var previews: some View {
         GameView(game: game)
+            .previewInterfaceOrientation(.portrait)
     }
 }
