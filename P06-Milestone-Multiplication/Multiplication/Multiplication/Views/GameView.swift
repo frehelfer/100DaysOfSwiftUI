@@ -30,7 +30,7 @@ struct GameView: View {
                 
                 Image(systemName: game.isRight ? "checkmark" : "xmark")
                     .font(.system(size: 70))
-                    .frame(width: 110, height: 110)
+                    .frame(width: 100, height: 100)
                     .background(game.isRight ? .CustomGreen : .CustomRed)
                     .foregroundColor(.black)
                     .cornerRadius(10)
@@ -40,6 +40,8 @@ struct GameView: View {
                     )
                     .scaleEffect(scaleAnimation)
                     .animation(.easeInOut.speed(0.44), value: scaleAnimation)
+                
+                Spacer()
                 
                 Text("\(game.multiplicationTable) x \(game.currentQuestion) = ?")
                     .font(.title)
@@ -51,7 +53,6 @@ struct GameView: View {
                         .strokeBorder(.black, lineWidth: 1)
                     )
                     .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
-                    .padding(20)
                     
                 Spacer()
                 
