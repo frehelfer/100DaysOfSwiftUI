@@ -25,7 +25,7 @@ struct GameView: View {
             Color.CustomBlue
                 .ignoresSafeArea()
             
-            VStack(spacing: 30) {
+            VStack {
                 Spacer()
                 
                 Image(systemName: game.isRight ? "checkmark" : "xmark")
