@@ -36,11 +36,8 @@ struct AddBookView: View {
                 Section {
                     TextEditor(text: $review)
                     
-                    Picker("Rating", selection: $rating) {
-                        ForEach(0..<6) {
-                            Text(String($0))
-                        }
-                    }
+                    RatingView(rating: $rating)
+                    
                 } header: {
                     Text("Write a review")
                 }
@@ -54,13 +51,23 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
+                        newBook.date = Date.now
                         
                         try? moc.save()
                         dismiss()
                     }
                 }
+                .disabled(hasValidInfo() == false)
             }
             .navigationTitle("Add book")
+        }
+    }
+    
+    func hasValidInfo() -> Bool {
+        if title.isReallyEmpty || author.isReallyEmpty || genre.isReallyEmpty {
+            return false
+        } else {
+            return true
         }
     }
 }
