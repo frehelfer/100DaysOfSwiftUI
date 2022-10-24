@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C08A7732903589000C934E0 /* Singer-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08A7722903589000C934E0 /* Singer-extension.swift */; };
 		0C5BBE1C2902D04200611513 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE1B2902D04200611513 /* CoreDataProjectApp.swift */; };
 		0C5BBE1E2902D04200611513 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE1D2902D04200611513 /* ContentView.swift */; };
 		0C5BBE202902D04600611513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5BBE1F2902D04600611513 /* Assets.xcassets */; };
 		0C5BBE232902D04600611513 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5BBE222902D04600611513 /* Preview Assets.xcassets */; };
 		0C5BBE2A2902D07B00611513 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE292902D07B00611513 /* DataController.swift */; };
 		0C5BBE2D2902D08E00611513 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE2B2902D08E00611513 /* CoreDataProject.xcdatamodeld */; };
-		0C5BBE302902DF5900611513 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE2E2902DF5900611513 /* Movie+CoreDataClass.swift */; };
-		0C5BBE312902DF5900611513 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BBE2F2902DF5900611513 /* Movie+CoreDataProperties.swift */; };
+		0CA0F7632906CDF100345FDE /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0F7622906CDF100345FDE /* FilteredList.swift */; };
+		0CA0F7662906D72000345FDE /* SecondProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0F7652906D72000345FDE /* SecondProject.swift */; };
+		0CA0F7692906D9E000345FDE /* CoreData-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0F7682906D9E000345FDE /* CoreData-extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C08A7722903589000C934E0 /* Singer-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer-extension.swift"; sourceTree = "<group>"; };
 		0C5BBE182902D04200611513 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5BBE1B2902D04200611513 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		0C5BBE1D2902D04200611513 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,8 +28,9 @@
 		0C5BBE222902D04600611513 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C5BBE292902D07B00611513 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0C5BBE2C2902D08E00611513 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
-		0C5BBE2E2902DF5900611513 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		0C5BBE2F2902DF5900611513 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0CA0F7622906CDF100345FDE /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		0CA0F7652906D72000345FDE /* SecondProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProject.swift; sourceTree = "<group>"; };
+		0CA0F7682906D9E000345FDE /* CoreData-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData-extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,9 @@
 		0C5BBE1A2902D04200611513 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				0C5BBE2E2902DF5900611513 /* Movie+CoreDataClass.swift */,
-				0C5BBE2F2902DF5900611513 /* Movie+CoreDataProperties.swift */,
 				0C5BBE1B2902D04200611513 /* CoreDataProjectApp.swift */,
-				0C5BBE1D2902D04200611513 /* ContentView.swift */,
+				0CA0F7672906D72400345FDE /* SecondProject */,
+				0CA0F7642906D6E000345FDE /* Singer */,
 				0C5BBE292902D07B00611513 /* DataController.swift */,
 				0C5BBE2B2902D08E00611513 /* CoreDataProject.xcdatamodeld */,
 				0C5BBE1F2902D04600611513 /* Assets.xcassets */,
@@ -77,6 +80,25 @@
 				0C5BBE222902D04600611513 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CA0F7642906D6E000345FDE /* Singer */ = {
+			isa = PBXGroup;
+			children = (
+				0CA0F7622906CDF100345FDE /* FilteredList.swift */,
+				0C5BBE1D2902D04200611513 /* ContentView.swift */,
+				0C08A7722903589000C934E0 /* Singer-extension.swift */,
+			);
+			path = Singer;
+			sourceTree = "<group>";
+		};
+		0CA0F7672906D72400345FDE /* SecondProject */ = {
+			isa = PBXGroup;
+			children = (
+				0CA0F7682906D9E000345FDE /* CoreData-extension.swift */,
+				0CA0F7652906D72000345FDE /* SecondProject.swift */,
+			);
+			path = SecondProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA0F7692906D9E000345FDE /* CoreData-extension.swift in Sources */,
 				0C5BBE1E2902D04200611513 /* ContentView.swift in Sources */,
 				0C5BBE2A2902D07B00611513 /* DataController.swift in Sources */,
+				0CA0F7632906CDF100345FDE /* FilteredList.swift in Sources */,
 				0C5BBE2D2902D08E00611513 /* CoreDataProject.xcdatamodeld in Sources */,
-				0C5BBE302902DF5900611513 /* Movie+CoreDataClass.swift in Sources */,
-				0C5BBE312902DF5900611513 /* Movie+CoreDataProperties.swift in Sources */,
 				0C5BBE1C2902D04200611513 /* CoreDataProjectApp.swift in Sources */,
+				0C08A7732903589000C934E0 /* Singer-extension.swift in Sources */,
+				0CA0F7662906D72000345FDE /* SecondProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

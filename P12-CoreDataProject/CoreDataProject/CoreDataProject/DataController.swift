@@ -18,7 +18,13 @@ class DataController: ObservableObject {
                 return
             }
             
-            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
+            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         }
+    }
+    
+    func save() {
+        guard container.viewContext.hasChanges else { return }
+        
+        try? container.viewContext.save()
     }
 }
