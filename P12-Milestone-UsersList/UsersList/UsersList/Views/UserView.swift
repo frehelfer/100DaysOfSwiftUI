@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct UserView: View {
-    var user: User
+    var user: CachedUser
     
     var body: some View {
         List {
             Section("User Info") {
                 HStack {
                     Text("Name:").bold()
-                    Text(user.name)
+                    Text(user.wrappedName)
                 }
                 HStack {
                     Text("Age:").bold()
@@ -23,33 +23,33 @@ struct UserView: View {
                 }
                 HStack {
                     Text("Email:").bold()
-                    Text(user.email)
+                    Text(user.wrappedEmail)
                 }
                 HStack {
                     Text("Company:").bold()
-                    Text(user.company)
+                    Text(user.wrappedCompany)
                 }
                 HStack {
                     Text("Address:").bold()
-                    Text(user.address)
+                    Text(user.wrappedAddress)
                 }
                 HStack {
                     Text("Registered:").bold()
-                    Text(user.registered.formatted(date: .numeric, time: .omitted))
+                    Text(user.wrappedRegistered.formatted(date: .numeric, time: .omitted))
                 }
             }
                         
             Section("About") {
-                Text(user.about)
+                Text(user.wrappedAbout)
             }
             
             Section("Friends") {
-                ForEach(user.friends) { friend in
-                    Text(friend.name)
+                ForEach(user.friendsArray) { friend in
+                    Text(friend.wrappedName)
                 }
             }
         }
-        .navigationTitle(user.name)
+        .navigationTitle(user.wrappedName)
     }
 }
 

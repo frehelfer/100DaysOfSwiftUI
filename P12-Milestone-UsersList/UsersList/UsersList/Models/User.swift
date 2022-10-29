@@ -22,9 +22,4 @@ struct User: Identifiable, Codable {
     
     var tags: [String]
     var friends: [Friend]
-    
-//    struct Friend: Identifiable, Codable {
-//        var id: String
-//        var name: String
-//    }
 }
