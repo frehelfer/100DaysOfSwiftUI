@@ -24,6 +24,8 @@ struct ListLayout: View {
                             .frame(width: 50, height: 50)
                             .padding(8)
                             .padding(.horizontal)
+                            .accessibilityLabel(mission.badge)
+                        
                         VStack {
                             Text(mission.displayName)
                                 .font(.title3)
