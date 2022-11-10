@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9E284F291BE24A0043FB7F /* UnforgettableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E284E291BE24A0043FB7F /* UnforgettableApp.swift */; };
+		0C9E2853291BE24E0043FB7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9E2852291BE24E0043FB7F /* Assets.xcassets */; };
+		0C9E2856291BE24E0043FB7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9E2855291BE24E0043FB7F /* Preview Assets.xcassets */; };
+		0C9E2861291BE2B00043FB7F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2860291BE2B00043FB7F /* HomeView.swift */; };
+		0C9E2863291BE3570043FB7F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2862291BE3570043FB7F /* PhotoModel.swift */; };
+		0C9E2865291BE5090043FB7F /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2864291BE5090043FB7F /* PhotoViewModel.swift */; };
+		0C9E2867291BEAB10043FB7F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2866291BEAB10043FB7F /* ImagePicker.swift */; };
+		0C9E2869291BFD730043FB7F /* InputImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2868291BFD730043FB7F /* InputImageNameView.swift */; };
+		0C9E286B291C28950043FB7F /* PhotosFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286A291C28950043FB7F /* PhotosFileManager.swift */; };
+		0C9E286D291C40400043FB7F /* PhotoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286C291C40400043FB7F /* PhotoRowView.swift */; };
+		0C9E286F291C47EE0043FB7F /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C9E284B291BE24A0043FB7F /* Unforgettable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforgettable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9E284E291BE24A0043FB7F /* UnforgettableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgettableApp.swift; sourceTree = "<group>"; };
+		0C9E2852291BE24E0043FB7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C9E2855291BE24E0043FB7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C9E2860291BE2B00043FB7F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0C9E2862291BE3570043FB7F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		0C9E2864291BE5090043FB7F /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		0C9E2866291BEAB10043FB7F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0C9E2868291BFD730043FB7F /* InputImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageNameView.swift; sourceTree = "<group>"; };
+		0C9E286A291C28950043FB7F /* PhotosFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFileManager.swift; sourceTree = "<group>"; };
+		0C9E286C291C40400043FB7F /* PhotoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRowView.swift; sourceTree = "<group>"; };
+		0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C9E2848291BE24A0043FB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C9E2842291BE24A0043FB7F = {
+			isa = PBXGroup;
+			children = (
+				0C9E284D291BE24A0043FB7F /* Unforgettable */,
+				0C9E284C291BE24A0043FB7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C9E284C291BE24A0043FB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E284B291BE24A0043FB7F /* Unforgettable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C9E284D291BE24A0043FB7F /* Unforgettable */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E284E291BE24A0043FB7F /* UnforgettableApp.swift */,
+				0C9E285E291BE2750043FB7F /* Views */,
+				0C9E285D291BE2700043FB7F /* ViewModel */,
+				0C9E285C291BE2690043FB7F /* Model */,
+				0C9E285F291BE27B0043FB7F /* Utilities */,
+				0C9E2852291BE24E0043FB7F /* Assets.xcassets */,
+				0C9E2854291BE24E0043FB7F /* Preview Content */,
+			);
+			path = Unforgettable;
+			sourceTree = "<group>";
+		};
+		0C9E2854291BE24E0043FB7F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E2855291BE24E0043FB7F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C9E285C291BE2690043FB7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E2862291BE3570043FB7F /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C9E285D291BE2700043FB7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E2864291BE5090043FB7F /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0C9E285E291BE2750043FB7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E2860291BE2B00043FB7F /* HomeView.swift */,
+				0C9E286C291C40400043FB7F /* PhotoRowView.swift */,
+				0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */,
+				0C9E2868291BFD730043FB7F /* InputImageNameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C9E285F291BE27B0043FB7F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E2866291BEAB10043FB7F /* ImagePicker.swift */,
+				0C9E286A291C28950043FB7F /* PhotosFileManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C9E284A291BE24A0043FB7F /* Unforgettable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9E2859291BE24E0043FB7F /* Build configuration list for PBXNativeTarget "Unforgettable" */;
+			buildPhases = (
+				0C9E2847291BE24A0043FB7F /* Sources */,
+				0C9E2848291BE24A0043FB7F /* Frameworks */,
+				0C9E2849291BE24A0043FB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unforgettable;
+			productName = Unforgettable;
+			productReference = 0C9E284B291BE24A0043FB7F /* Unforgettable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C9E2843291BE24A0043FB7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0C9E284A291BE24A0043FB7F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0C9E2846291BE24A0043FB7F /* Build configuration list for PBXProject "Unforgettable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C9E2842291BE24A0043FB7F;
+			productRefGroup = 0C9E284C291BE24A0043FB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C9E284A291BE24A0043FB7F /* Unforgettable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C9E2849291BE24A0043FB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E2856291BE24E0043FB7F /* Preview Assets.xcassets in Resources */,
+				0C9E2853291BE24E0043FB7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C9E2847291BE24A0043FB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E286B291C28950043FB7F /* PhotosFileManager.swift in Sources */,
+				0C9E2863291BE3570043FB7F /* PhotoModel.swift in Sources */,
+				0C9E286D291C40400043FB7F /* PhotoRowView.swift in Sources */,
+				0C9E2865291BE5090043FB7F /* PhotoViewModel.swift in Sources */,
+				0C9E2867291BEAB10043FB7F /* ImagePicker.swift in Sources */,
+				0C9E284F291BE24A0043FB7F /* UnforgettableApp.swift in Sources */,
+				0C9E2869291BFD730043FB7F /* InputImageNameView.swift in Sources */,
+				0C9E2861291BE2B00043FB7F /* HomeView.swift in Sources */,
+				0C9E286F291C47EE0043FB7F /* PhotoDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C9E2857291BE24E0043FB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C9E2858291BE24E0043FB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C9E285A291BE24E0043FB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unforgettable/Preview Content\"";
+				DEVELOPMENT_TEAM = T68CB4R9H5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library to select a photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.Unforgettable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C9E285B291BE24E0043FB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unforgettable/Preview Content\"";
+				DEVELOPMENT_TEAM = T68CB4R9H5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library to select a photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.Unforgettable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C9E2846291BE24A0043FB7F /* Build configuration list for PBXProject "Unforgettable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9E2857291BE24E0043FB7F /* Debug */,
+				0C9E2858291BE24E0043FB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C9E2859291BE24E0043FB7F /* Build configuration list for PBXNativeTarget "Unforgettable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9E285A291BE24E0043FB7F /* Debug */,
+				0C9E285B291BE24E0043FB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C9E2843291BE24A0043FB7F /* Project object */;
+}
