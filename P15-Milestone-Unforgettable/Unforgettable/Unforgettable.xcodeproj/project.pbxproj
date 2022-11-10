@@ -18,6 +18,8 @@
 		0C9E286B291C28950043FB7F /* PhotosFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286A291C28950043FB7F /* PhotosFileManager.swift */; };
 		0C9E286D291C40400043FB7F /* PhotoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286C291C40400043FB7F /* PhotoRowView.swift */; };
 		0C9E286F291C47EE0043FB7F /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */; };
+		0CEA3D2A291D35A8007A29D0 /* EditPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA3D29291D35A8007A29D0 /* EditPhotoView.swift */; };
+		0CEA3D2C291D6FF4007A29D0 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA3D2B291D6FF4007A29D0 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		0C9E286A291C28950043FB7F /* PhotosFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFileManager.swift; sourceTree = "<group>"; };
 		0C9E286C291C40400043FB7F /* PhotoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRowView.swift; sourceTree = "<group>"; };
 		0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		0CEA3D29291D35A8007A29D0 /* EditPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoView.swift; sourceTree = "<group>"; };
+		0CEA3D2B291D6FF4007A29D0 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				0C9E2860291BE2B00043FB7F /* HomeView.swift */,
 				0C9E286C291C40400043FB7F /* PhotoRowView.swift */,
 				0C9E286E291C47EE0043FB7F /* PhotoDetailView.swift */,
+				0CEA3D29291D35A8007A29D0 /* EditPhotoView.swift */,
 				0C9E2868291BFD730043FB7F /* InputImageNameView.swift */,
 			);
 			path = Views;
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9E2866291BEAB10043FB7F /* ImagePicker.swift */,
+				0CEA3D2B291D6FF4007A29D0 /* LocationFetcher.swift */,
 				0C9E286A291C28950043FB7F /* PhotosFileManager.swift */,
 			);
 			path = Utilities;
@@ -194,9 +200,11 @@
 				0C9E2863291BE3570043FB7F /* PhotoModel.swift in Sources */,
 				0C9E286D291C40400043FB7F /* PhotoRowView.swift in Sources */,
 				0C9E2865291BE5090043FB7F /* PhotoViewModel.swift in Sources */,
+				0CEA3D2C291D6FF4007A29D0 /* LocationFetcher.swift in Sources */,
 				0C9E2867291BEAB10043FB7F /* ImagePicker.swift in Sources */,
 				0C9E284F291BE24A0043FB7F /* UnforgettableApp.swift in Sources */,
 				0C9E2869291BFD730043FB7F /* InputImageNameView.swift in Sources */,
+				0CEA3D2A291D35A8007A29D0 /* EditPhotoView.swift in Sources */,
 				0C9E2861291BE2B00043FB7F /* HomeView.swift in Sources */,
 				0C9E286F291C47EE0043FB7F /* PhotoDetailView.swift in Sources */,
 			);
@@ -330,7 +338,7 @@
 				DEVELOPMENT_TEAM = T68CB4R9H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library to select a photo.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app use your location to show where your photo was taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,7 +368,7 @@
 				DEVELOPMENT_TEAM = T68CB4R9H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library to select a photo.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app use your location to show where your photo was taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

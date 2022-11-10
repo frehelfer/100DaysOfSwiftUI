@@ -35,6 +35,21 @@ struct PhotoRowView: View {
             }
             .padding(2)
         }
+        .swipeActions(edge: .leading, allowsFullSwipe: false) {
+            Button("Edit") {
+                vm.getPhoto(photo: photo)
+                vm.editingPhoto = true
+            }
+            .tint(.blue)
+        }
+        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+            Button {
+                vm.deletePhoto(photo: photo)
+            } label: {
+                Image(systemName: "trash")
+            }
+            .tint(.red)
+        }
     }
 }
 

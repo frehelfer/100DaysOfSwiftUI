@@ -13,7 +13,6 @@ struct HomeView: View {
     
     @State private var showingImagePicker = false
     @State private var showingInputNameDialog = false
-    @State private var withAnimation = 0.0
     
     var body: some View {
         ZStack {
@@ -21,20 +20,20 @@ struct HomeView: View {
                 VStack {
                     Button {
                         showingImagePicker = true
+                        vm.locationFetcher.start()
                     } label: {
                         Text("add photo".uppercased())
-                            .font(.title2.bold())
+                            .font(.title3.bold())
                             .kerning(1.4)
                             .foregroundColor(.white)
                             .padding()
                             .background(.blue)
                             .cornerRadius(10)
                     }
+                    .padding(20)
                     .onChange(of: vm.inputImage) { _ in
                         showingInputNameDialog = true
-                        withAnimation = 10
                     }
-                    .padding()
                     
                     List {
                         ForEach(vm.photos) { photo in

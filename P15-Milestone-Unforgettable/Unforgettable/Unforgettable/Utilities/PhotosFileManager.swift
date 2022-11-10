@@ -36,9 +36,7 @@ class PhotosFileManager {
         guard
             let data = value.jpegData(compressionQuality: 0.8),
             let url = getImagePath(key: key)
-        else {
-            return
-        }
+        else { return }
         
         do {
             try data.write(to: url)
@@ -51,11 +49,22 @@ class PhotosFileManager {
         guard
             let url = getImagePath(key: key),
             FileManager.default.fileExists(atPath: url.path)
-        else {
-            return nil
-        }
+        else { return nil }
         
         return UIImage(contentsOfFile: url.path)
+    }
+    
+    func delete(key: String) {
+        guard
+            let url = getImagePath(key: key),
+            FileManager.default.fileExists(atPath: url.path)
+        else { return }
+        
+        do {
+            try FileManager.default.removeItem(at: url)
+        } catch let error {
+            print("Error removing photo. \(error)")
+        }
     }
 }
 

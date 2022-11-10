@@ -1,36 +1,17 @@
 //
-//  InputImageNameView.swift
+//  EditPhotoView.swift
 //  Unforgettable
 //
-//  Created by Frédéric Helfer on 09/11/22.
+//  Created by Frédéric Helfer on 10/11/22.
 //
 
 import SwiftUI
 
-struct InputImageNameView: View {
-    @Environment(\.dismiss) var dismiss
-    
+struct EditPhotoView: View {
     @ObservedObject var vm: PhotoViewModel
-    @Binding var showingInputNameDialog: Bool
     
     var body: some View {
         VStack(spacing: 13) {
-            HStack {
-                Spacer()
-                Button {
-                    vm.inputImageName = ""
-                    dismiss()
-                    vm.editingPhoto = false
-                } label: {
-                    Label("Exit", systemImage: "xmark")
-                        .labelStyle(.iconOnly)
-                        .font(.title2)
-                        .foregroundColor(.gray)
-                        .padding()
-                }
-            }
-
-            
             if let image = vm.inputImage {
                 Image(uiImage: image)
                     .resizable()
@@ -48,12 +29,7 @@ struct InputImageNameView: View {
                 .cornerRadius(10)
             
             Button {
-                if vm.editingPhoto {
-                    vm.editPhoto()
-                } else {
-                    vm.addPhoto()
-                }
-                dismiss()
+                vm.editPhoto()
             } label: {
                 Text("Save")
                     .foregroundColor(.white)
@@ -69,8 +45,8 @@ struct InputImageNameView: View {
     }
 }
 
-struct InputImageNameView_Previews: PreviewProvider {
+struct EditPhotoView_Previews: PreviewProvider {
     static var previews: some View {
-        InputImageNameView(vm: PhotoViewModel(), showingInputNameDialog: .constant(true))
+        EditPhotoView(vm: PhotoViewModel())
     }
 }
