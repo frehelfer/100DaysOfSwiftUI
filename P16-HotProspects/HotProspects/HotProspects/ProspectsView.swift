@@ -16,6 +16,7 @@ struct ProspectsView: View {
     
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    @State private var isShowingConfirmationDialog = false
     
     let filter: FilterType
     
@@ -23,14 +24,34 @@ struct ProspectsView: View {
         NavigationView {
             List {
                 ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
+                    HStack {
+                        if filter == .none {
+                            Label(prospect.isContacted ? "Contacted" : "Uncontacted", systemImage: prospect.isContacted ? "person.crop.circle.badge.checkmark" : "person.crop.circle.badge.exclamationmark")
+                                .labelStyle(.iconOnly)
+                                .font(.title)
+                                .foregroundColor(prospect.isContacted ? .green : .yellow)
+                        }
                         
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Spacer()
                     }
-                    .swipeActions {
+                    .swipeActions(edge: .trailing) {
+                        Button {
+                            prospects.delete(of: prospect)
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
+                        .tint(.red)
+
+                    }
+                    .swipeActions(edge: .leading) {
                         if prospect.isContacted {
                             Button {
                                 prospects.toggle(prospect)
@@ -61,15 +82,28 @@ struct ProspectsView: View {
             }
             .navigationTitle(title)
             .toolbar {
-                Button {
-                    isShowingScanner = true
-                } label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        isShowingConfirmationDialog = true
+                    } label: {
+                        Label("Sort type", systemImage: "line.3.horizontal.decrease.circle")
+                    }
                 }
-
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingScanner = true
+                    } label: {
+                        Label("Scan", systemImage: "qrcode.viewfinder")
+                    }
+                }
             }
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Frédéric Helfer\nfre.helfer@gmail.com", completion: handleScan)
+            }
+            .confirmationDialog("How do you want to sort", isPresented: $isShowingConfirmationDialog) {
+                Button("Sort by name") { prospects.sorted(by: .name) }
+                Button("Sort by most recent") { prospects.sorted(by: .mostRecent) }
             }
         }
     }
@@ -150,5 +184,6 @@ struct ProspectsView: View {
 struct ProspectsView_Previews: PreviewProvider {
     static var previews: some View {
         ProspectsView(filter: .none)
+            .environmentObject(Prospects())
     }
 }
