@@ -4,7 +4,7 @@ Tracking my solutions to the challenge - 100 Days of SwiftUi - by Paul Hudson
 
 https://www.hackingwithswift.com/100/swiftui
 
-## Completion status
+## Completion status   ✅
 
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
