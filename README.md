@@ -40,3 +40,5 @@ Projects / Topics                                                               
 [Project 18](P18-LayoutAndGeometry) - *Layout and Geometry*   <br/><sub> Layout, alignment, geometry, positioning </sub>                                                     | ![screen1](24-Project18/screenshots/small/screen01.png) |
 [Milestone Projects 16-18](P18-Milestone-DiceRoll) - *Roll the Dice*                                                                                                         | ![screen1](25-Milestone-Projects16-18/screenshots/small/screen01.png)  |
 [Project 19](P19-SnowSeeker) - *SnowSeeker*    <br/><sub> Split view layouts, optional alerts, flexible layouts with Group, ListFormatter </sub>                             | ![screen1](26-Project19/screenshots/small/screen01.png)|
+
+![certificate](xcertificate.jpg)
