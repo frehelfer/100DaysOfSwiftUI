@@ -27,13 +27,14 @@ struct ContentView: View {
         .accessibilityLabel("Value")
         .accessibilityValue(String(value))
         .accessibilityAdjustableAction { direction in
-            switch direction
-        case .increment:
-            value += 1
-        case .decrement:
-            value -= 1
-        default:
-            print("Not handled")
+            switch direction {
+            case .increment:
+                value += 1
+            case .decrement:
+                value -= 1
+            default:
+                print("Not handled")
+            }
         }
     }
 }
