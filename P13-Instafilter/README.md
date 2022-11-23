@@ -1,15 +1,11 @@
-# Project 09 - ✏️ Drawing
+# Project 13 - 📸🖼 InstaFilter
 
-**Purpose of the App :**
-
-A lot of exercices to practice all the concepts.
-Here are just one exemple very nice.
 
 ##
 
 **Features Learned :**
 
-Paths, Shapes, Insettable Shapes, CGAffineTransform, ImagePaint, drawingGroup(), animatableData, AnimatablePair
+UIKit integration, Core Image, Custom bindings, Action Sheets
 
 ##
 

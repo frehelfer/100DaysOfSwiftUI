@@ -1,15 +1,5 @@
-# Project 09 - ✏️ Drawing
+# Project 12 - Milestone - Users List
 
-**Purpose of the App :**
-
-A lot of exercices to practice all the concepts.
-Here are just one exemple very nice.
-
-##
-
-**Features Learned :**
-
-Paths, Shapes, Insettable Shapes, CGAffineTransform, ImagePaint, drawingGroup(), animatableData, AnimatablePair
 
 ##
 

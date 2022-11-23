@@ -1,15 +1,10 @@
-# Project 09 - ✏️ Drawing
-
-**Purpose of the App :**
-
-A lot of exercices to practice all the concepts.
-Here are just one exemple very nice.
+# Project 16 - ♨️ -  Hot Prospects
 
 ##
 
 **Features Learned :**
 
-Paths, Shapes, Insettable Shapes, CGAffineTransform, ImagePaint, drawingGroup(), animatableData, AnimatablePair
+Custom environment objects, Tab Views, Result, objectWillChange, Image interpolation, Context menus, Local notifications, Swift package dependencies, filter(), map()
 
 ##
 

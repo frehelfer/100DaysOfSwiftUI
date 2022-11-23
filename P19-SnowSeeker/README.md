@@ -1,15 +1,10 @@
-# Project 09 - ✏️ Drawing
-
-**Purpose of the App :**
-
-A lot of exercices to practice all the concepts.
-Here are just one exemple very nice.
+# Project 19 - ⛷❄️ SnowSeeker 
 
 ##
 
 **Features Learned :**
 
-Paths, Shapes, Insettable Shapes, CGAffineTransform, ImagePaint, drawingGroup(), animatableData, AnimatablePair
+Split view layouts, optional alerts, flexible layouts with Group, ListFormatter
 
 ##
 
